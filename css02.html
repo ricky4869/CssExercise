@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: #fff;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            background-color: #222;
+        }
+        header h1{
+            font-size: 69px;
+            text-align: center; 
+        }
+        .wrap {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            /* flex-direction: column; */
+            /* justify-content: center; */
+
+        }
+
+        .item {
+            /* align-self: center; */
+            position: relative;
+            width: 25%;
+            /* height: 250px; */
+        }
+
+        .item>img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .txt {
+            background-color: rgba(0, 0, 0, .5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            /* height: auto; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+        .txt p{
+            margin: 0 10px;
+        }
+        .txt p:after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            /* margin: 0 10px; */
+            transition: width .5s .2s;
+        }
+
+        .item:hover .txt p:after{
+            width: 100%;
+        }
+        .item:hover .txt {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            CSS刻意練習02
+        </h1>
+    </header>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/400/250/?random=54">
+            <div class="txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure pariatur ea assumenda possimus
+                    perferendis similique.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/400/250/?random=456">
+            <div class="txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure pariatur ea assumenda possimus
+                    perferendis similique.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/400/250/?random=789">
+            <div class="txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure pariatur ea assumenda possimus
+                    perferendis similique.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/400/250/?random=415">
+            <div class="txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure pariatur ea assumenda possimus
+                    perferendis similique.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
