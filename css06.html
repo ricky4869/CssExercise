@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: #fff;
+            outline: none;
+        
+        }
+
+        .footer {
+            background: linear-gradient(30deg, #298, #262) fixed center center / 100% 100%;
+        }
+
+        .footer-item {
+            width: 100%;
+            /* margin: auto; */
+            display: flex;
+            justify-content: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        .container {
+            width: 1200px;
+            height: 50vh;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .item {
+            width: 100%;
+            /* margin-top: 100px; */
+            margin: 100px 20px 0 20px;
+            /* text-align: center; */
+        }
+
+        .item p {
+            width: 100%;
+            font-weight: 700;
+            border-bottom: 2px solid #fff;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .item>ul {
+            margin-top: 20px;
+        }
+
+        .item>ul>li {
+            padding: .2em 0;
+        }
+
+        .item > .sub{
+            margin-top: 20px;
+        }
+
+        .item > .sub > input[type="submit"]{
+            background: #185533;
+            border: none;
+            padding: .4em .6em;
+        }
+
+        .item > .sub > input[type="submit"]:active{
+            opacity: .8;
+        }
+
+        .item > .sub > input[type="text"]{
+            padding: 0.2em 0;
+            color: #333;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="footer">
+        <div class="container">
+            <div class="item">
+                <p>水果</p>
+                <ul>
+                    <li>香蕉bananananna</li>
+                    <li>木瓜papapapapapaya</li>
+                    <li>西瓜waterlemon</li>
+                    <li>蘋果apppppple</li>
+                    <li>芒果mongo</li>
+                </ul>
+            </div>
+            <div class="item">
+                <p>寵物</p>
+                <ul>
+                    <li>狗dogdog</li>
+                    <li>貓咪cat</li>
+                    <li>鳥bird</li>
+                    <li>魚fish</li>
+                </ul>
+            </div>
+            <div class="item">
+                <p>直轄市</p>
+                <ul>
+                    <li>台北市taipei</li>
+                    <li>新北市new taipei</li>
+                    <li>桃園市touyuan</li>
+                    <li>台中市taichung</li>
+                    <li>台南市tNNNNNNN</li>
+                    <li>高雄市kaohsiung</li>
+                </ul>
+            </div>
+            <div class="item">
+                <p>訂閱電子報</p>
+                <div class="sub">
+                    <input type="text">
+                    <input type="submit" value="訂閱">
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-item">
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

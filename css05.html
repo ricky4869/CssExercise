@@ -82,6 +82,18 @@
             align-self: flex-end;
             /* align-items: flex-end; */
         }
+
+        .item > .txt > p{
+            /* width: 0; */
+            height: 0;
+            overflow: hidden;
+            transition: all .5s;
+            /* box-sizing: border-box ; */
+        }
+
+        .itemA:hover p{
+            height: 100%;
+        }
         .item > .img{
             transition:all .5s;
             width: 50%;
@@ -91,10 +103,9 @@
             width: 30%;
         }
         .item > .img > img{
-            /* vertical-align: middle; */
+            vertical-align: middle;
             width: 100%;
             height: 100%;
-            
         }
 
 
